@@ -2,25 +2,10 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        sft_one_excl: sft_one_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N1>, <&kp EXCL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        sft_two_qmark: sft_two_qmark {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N2>, <&kp QMARK>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
-        a {
+        test {
             bindings = <
                 &kp DOT &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp GRAVE &kp Q &kp W &kp E
                 &kp R &kp T &kp MINUS &kp A &kp S &kp D &kp F &kp G &kp EQUAL &kp Z
